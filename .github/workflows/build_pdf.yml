@@ -48,5 +48,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: burgers-report
-          path: burgers_report.pdf
+          path: mup_burgers_projekt.pdf
           if-no-files-found: error
