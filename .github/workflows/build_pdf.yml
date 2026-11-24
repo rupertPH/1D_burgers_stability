@@ -41,7 +41,7 @@ jobs:
 
       # 6. Wykonanie notebooka i wygenerowanie PDF
       - name: Render notebook to PDF
-        run: quarto render burgers_report.ipynb --to pdf
+        run: quarto render mup_burgers_projekt.ipynb --to pdf
 
       # 7. Udostępnienie PDF jako artefaktu
       - name: Upload PDF
