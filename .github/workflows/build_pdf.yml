@@ -43,10 +43,12 @@ jobs:
       - name: Render notebook to PDF
         run: quarto render mup_burgers_projekt.ipynb --to pdf
 
-      # 7. Udostępnienie PDF jako artefaktu
-      - name: Upload PDF
+      # 7. Udostępnienie PDF i notebooka jako artefaktu
+      - name: Upload report and notebook
         uses: actions/upload-artifact@v4
         with:
           name: burgers-report
-          path: mup_burgers_projekt.pdf
+          path: |
+            mup_burgers_projekt.pdf
+            mup_burgers_projekt.ipynb
           if-no-files-found: error
